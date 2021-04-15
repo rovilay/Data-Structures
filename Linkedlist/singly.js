@@ -128,4 +128,26 @@ class LinkedList {
     removeFirst () {
       return this.removeAtPosition(1);
     }
+
+    /**
+     * get item from a specified position in the list
+     * @param {number} n - position of item to retrieve
+     * @returns {*} retrieved item
+     */
+    getAtPosition (n) {
+        if (n < 1 || n > this.size || this.head === null) {
+            return null;
+        }
+
+        let currentNode = this.head;
+        let i = 1;
+
+        // find the node at position n
+        while (i < n) {
+            currentNode = currentNode.next;
+            i += 1;
+        }
+    
+        return currentNode.value;
+    }
 }
