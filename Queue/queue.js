@@ -14,11 +14,11 @@ class Queue {
     }
 
     /**
-     * adds item to the front of the queue
+     * adds item to the back of the queue
      * @param {*} value - item to add
      */
     enqueue (value) {
-        this._list.addFirst(value);
+        this._list.addLast(value);
     }
 
     /**
