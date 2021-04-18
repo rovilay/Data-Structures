@@ -34,6 +34,6 @@ class Queue {
      * @returns {*} item
      */
     peek () {
-        return this._list.getAtPosition(1);
+        return this._list.head.value;
     }
 }
