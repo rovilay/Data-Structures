@@ -173,7 +173,7 @@ class DoublyLinkedList {
         return nodeToRemove.value;
     }
 
-        /**
+    /**
      * get item from a specified position in the list
      * @param {number} n - position of item to retrieve
      * @returns {*} retrieved item

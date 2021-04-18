@@ -34,6 +34,6 @@ class Stack {
      * @returns {*} item
      */
     peek () {
-        return this._list.getAtPosition(this.size);
+        return this._list.tail.value;
     }
 }
